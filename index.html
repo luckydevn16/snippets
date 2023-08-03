@@ -1,0 +1,3157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Useful snippets</title>
+	<link rel="shortcut icon" href="assets/icons/code.png" type="image/png">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="container">
+            <h1 class="main-heading">
+                My Snippets
+            </h1>
+		    <p class="author">by <a href="https://github.com/redhatdev16" target="_blank">redhatdev16</a></p>
+            <div class="control-panel">
+                <div class="search-wrapper">
+                    <input type="text" class="search-input" id="search" placeholder="Search snippet" />
+                </div>
+                <nav class="filter-nav">
+                    <ul class="filter-list">
+                        <li data-filter="all" class="filter-list-item">ALL</li>
+                        <li data-filter="filterHTML" class="filter-list-item html">HTML</li>
+                        <li data-filter="filterCSS" class="filter-list-item css">CSS</li>
+                        <li data-filter="filterJS" class="filter-list-item js">JS</li>
+                        <li data-filter="filterJQUERY" class="filter-list-item jquery">JQUERY</li>
+                        <li data-filter="filterPHP" class="filter-list-item php">PHP</li>
+                        <li data-filter="filterGIT" class="filter-list-item git">GIT</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="item-card filterHTML" data-name="Native Accordion">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/html.png" alt="html" height="22" class="item-name-icon">
+                        <span class="name-span">Native Accordion</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;details&gt;
+    &lt;summary&gt;Yo wassup??&lt;/summary&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;
+    &lt;summary&gt;How come??&lt;/summary&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;
+    &lt;summary&gt;What do you hear? What do you say?&lt;/summary&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;/details&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterHTML" data-name="Native Autocomplete">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/html.png" alt="html" height="22" class="item-name-icon">
+                        <span class="name-span">Native Autocomplete</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;label for="option"&gt;Choose an option:&lt;/label&gt;
+&lt;input list="option"&gt;
+
+&lt;datalist id="option"&gt;
+    &lt;option value="first option"&gt;&lt;/option&gt;
+    &lt;option value="second option"&gt;&lt;/option&gt;
+    &lt;option value="third option"&gt;&lt;/option&gt;
+&lt;/datalist&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterHTML" data-name="Native Dialog">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/html.png" alt="html" height="22" class="item-name-icon">
+                        <span class="name-span">Native Dialog</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <a href="https://developer.mozilla.org/ru/docs/Web/HTML/Element/dialog" target="_blank">https://developer.mozilla.org/ru/docs/Web/HTML/Element/dialog</a>
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+
+&lt;div class="page-wrapper"&gt;
+    &lt;button onclick="window.dialog.showModal();"&gt;Show Dialog&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;dialog id="dialog"&gt;
+    &lt;form method="dialog"&gt;
+      &lt;h2&gt;Dialog Heading&lt;/h2&gt;
+      &lt;p&gt;Dialog text&lt;/p&gt;
+      &lt;menu&gt;
+        &lt;button&gt;Yah.&lt;/button&gt;
+      &lt;/menu&gt;
+    &lt;/form&gt;
+&lt;/dialog&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel css">
+                        <pre>
+                            <code>
+dialog::backdrop {
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterHTML" data-name="RegEx for All Links">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/html.png" alt="html" height="22" class="item-name-icon">
+                        <span class="name-span">RegEx for All Links</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+href="([^"]+)"
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterHTML" data-name="Running String">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/html.png" alt="html" height="22" class="item-name-icon">
+                        <span class="name-span">Running String</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;marquee class="running-string"&gt;
+    Lorem ipsum dolor sit amet.
+&lt;/marquee&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterHTML" data-name="Time Tag (Better for SEO)">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/html.png" alt="html" height="22" class="item-name-icon">
+                        <span class="name-span">Time Tag (Better for SEO)</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;time class="article-date" datetime="2022-01-01"&gt;
+    January 1, 2022
+&lt;/time&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterHTML" data-name="Viewport Tag for iOS">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/html.png" alt="html" height="22" class="item-name-icon">
+                        <span class="name-span">Viewport Tag for iOS</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" /&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+		
+            <div class="item-card filterHTML" data-name="WEBP If Supporting">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/html.png" alt="html" height="22" class="item-name-icon">
+                        <span class="name-span">WEBP If Supporting</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;picture&gt;
+    &lt;source srcset="/path/to/image.webp" type="image/webp"&gt;
+    &lt;img src="/path/to/image.jpg" alt="insert alt text here"&gt;
+&lt;/picture&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterCSS" data-name="CSS Animation">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/css.png" alt="css" height="22" class="item-name-icon">
+                        <span class="name-span">CSS Animation</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel css">
+                        <pre>
+                            <code>
+.your-class {
+    background-color: red;
+    background-image: -webkit-linear-gradient(    left, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+    background-image:    -moz-linear-gradient(    left, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+    background-image:      -o-linear-gradient(    left, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+    background-image:         linear-gradient(to right, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+    color: white;
+    height: 100%;
+    width: 20%;
+    
+    -webkit-animation: 4s linear 0s infinite alternate move_eye;
+        -moz-animation: 4s linear 0s infinite alternate move_eye;
+            -o-animation: 4s linear 0s infinite alternate move_eye;
+            animation: 4s linear 0s infinite alternate move_eye;
+    }
+    
+    @-webkit-keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+        @-moz-keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+        @-o-keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+            @keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterCSS" data-name="Form Styles Template">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/css.png" alt="css" height="22" class="item-name-icon">
+                        <span class="name-span">Form Styles Template</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel css">
+                        <pre>
+                            <code>
+/*==== FORM ========*/
+.form .input-wrap {
+    margin: 15px 0;
+}
+.form .input-wrap input {
+    height: 45px !important;
+    padding: 0 1rem;
+}
+.form .input-wrap input:focus {
+    
+}
+.form .input-wrap input.valid,
+.form .input-wrap input.valid:focus {
+    
+}
+.form .input-wrap .vue-tel-input {
+    
+}
+.form .input-wrap .vue-tel-input input {
+    
+}
+.form .input-wrap .vue-tel-input .vti__dropdown {
+    
+}
+.form .input-wrap .vue-tel-input .vti__dropdown .vti__dropdown-item {
+
+}
+.form .checkbox-wrap {
+    display: flex;
+}
+.form .checkbox-wrap input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+.form .checkbox-wrap input::before {
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+    height: 1rem;
+    background-color: #EABC49;
+}
+.form .checkbox-wrap input:checked::before {
+    content: '\2713';
+}
+.form .checkbox-wrap label {
+    
+}
+.form .checkbox-wrap label .alterlink {
+    
+}
+.form .input-wrap button {
+    min-height: 50px;
+    background-color: rgb(51, 128, 209);
+    border: 0;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: all ease 0.2s;
+}
+.form .input-wrap button:hover {
+    background-color: rgb(79, 136, 196);
+    
+}
+.form .input-wrap button:active {
+    transform: scale(0.98);
+}
+
+/*==== VIDEO PLAY BUTTON ===========*/
+.video .play-btn::before {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-position: center center;
+    background-size: 4rem;
+}
+
+.terms__text ul li {
+    list-style: disc inside;
+}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterCSS" data-name="Running String">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/css.png" alt="css" height="22" class="item-name-icon">
+                        <span class="name-span">Running String</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;div class="running-string"&gt;
+    &lt;p&gt;
+        ПРОГРАМА КУРСУ &#8226; ПРОГРАМА КУРСУ &#8226; ПРОГРАМА КУРСУ &#8226; ПРОГРАМА КУРСУ &#8226;  
+        ПРОГРАМА КУРСУ &#8226; ПРОГРАМА КУРСУ &#8226; ПРОГРАМА КУРСУ &#8226; ПРОГРАМА КУРСУ &#8226;    
+    &lt;/p&gt;
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel css">
+                        <pre>
+                            <code>
+.running-string {
+    background-color: #000;
+    padding: 1rem 0;
+}
+.running-string p {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #fff;
+    text-align:center;
+    animation: text 40s infinite linear;
+    white-space: nowrap;
+}
+@keyframes text {
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(-200%, 0);
+    }
+}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-card filterCSS" data-name="Stars Rating">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/css.png" alt="css" height="14" class="item-name-icon"> 
+                        <span class="name-span">Stars Rating</span>
+                    </div> 
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+<div class="rating-stars" style="--rating: 3.8;padding:0.6rem" aria-label="Rating of this broker is 3.8 out of 5.0"></div>
+<style>
+	:root {
+	    --rating-star-size: 24px;
+	    --rating-star-color: #ccc;
+	    --rating-star-background: #FFC132;
+	}
+	/* RATING STARS */
+	.rating-stars {
+	    --rating-percent: calc(var(--rating) / 5 * 100%);
+		display: inline-block;
+		font-size: var(--rating-star-size);
+		font-family: Times;
+		line-height: 1;
+	}
+	.rating-stars::before {
+	    content: '★★★★★';
+		letter-spacing: 1px;
+		background: linear-gradient(90deg, var(--rating-star-background) var(--rating-percent), var(--rating-star-color) var(--rating-percent));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+</style>
+                    </div>
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;div class="rating-stars" style="--rating: 4.1;" aria-label="Rating of this broker is 4.1 out of 5.0"&gt;&lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel css">
+                        <pre>
+                            <code>
+:root {
+    --rating-star-size: 24px;
+    --rating-star-color: #ccc;
+    --rating-star-background: #FFC132;
+}
+/* RATING STARS */
+.rating-stars {
+    --rating-percent: calc(var(--rating) / 5 * 100%);
+	display: inline-block;
+	font-size: var(--rating-star-size);
+	font-family: Times;
+	line-height: 1;
+}
+.rating-stars::before {
+    content: '★★★★★';
+	letter-spacing: 1px;
+	background: linear-gradient(90deg, var(--rating-star-background) var(--rating-percent), var(--rating-star-color) var(--rating-percent));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-card filterJS" data-name="Accordion">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Accordion</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;button class="accordion"&gt;Section 1&lt;/button&gt;
+&lt;div class="panel"&gt;
+    &lt;p&gt;Lorem ipsum...&lt;/p&gt;
+&lt;/div&gt;
+&lt;button class="accordion"&gt;Section 2&lt;/button&gt;
+&lt;div class="panel"&gt;
+    &lt;p&gt;Lorem ipsum...&lt;/p&gt;
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel css">
+                        <pre>
+                            <code>
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}                                 
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796";
+}
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i &lt; acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+}
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+function accordion(itemSelector) {
+  const items = document.querySelectorAll(itemSelector);
+  const toggle = (item) => item.classList.toggle("active");
+
+  items.forEach((item) => item.addEventListener("click", () => toggle(item)));
+}
+
+accordion(".faq-item");
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-card filterJS" data-name="Animated Counting on Scroll">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Animated Counting on Scroll</span>
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;span class="counter" data-to="10" data-stop="0"&gt;10&lt;/span&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+(function(){
+    let counter = document.querySelectorAll('.counter');
+    let limit = 0;
+    window.addEventListener('scroll', function(){  
+        if( limit == counter.length ){ return; }
+        for(let i = 0; i &lt; counter.length; i++){
+        let pos = counter[i].getBoundingClientRect().top;
+        let win = window.innerHeight - 90;
+        if( pos &lt; win && counter[i].dataset.stop === "0" ){
+            counter[i].dataset.stop = 1;
+            let x = 0;
+            limit++;
+            let int = setInterval(function(){
+            x = x + Math.ceil( counter[i].dataset.to / 50 ); 
+            counter[i].innerText = x;
+            if( x > counter[i].dataset.to ){
+                counter[i].innerText = counter[i].dataset.to;
+                clearInterval(int);
+            }
+            }, 60);
+        }
+        }
+    });
+})();
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterJS" data-name="ANIMATION ON SCROLL">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">ANIMATION ON SCROLL</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel css">
+                        <pre>
+                            <code>
+/* REVEALING ANIMATION */
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 0.9s all ease;
+}
+.reveal.static {
+    transform: translateY(0) !important;
+    transition-delay: 0.4s;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+.delay-02 {
+    transition-delay: 0.2s;
+}
+.delay-04 {
+    transition-delay: 0.4s;
+}
+.delay-06 {
+    transition-delay: 0.6s;
+}
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// REVEALING ON SCROLL
+const the_animation = document.querySelectorAll('.reveal')
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active')
+        }
+	// IF REVERSE ANIMATIONS NEEDED
+        // else {
+        //     entry.target.classList.remove('active')
+        // }
+    })
+}, {threshold: 0.3});
+
+for (let i = 0; i < the_animation.length; i++) {
+    const elements = the_animation[i];
+
+    observer.observe(elements);
+} 
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterJS" data-name="Bitcoin Price Fetching">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Bitcoin Price Fetching</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+fetch("https://api.coindesk.com/v1/bpi/currentprice.json").then(function (response) {
+    response.json().then(function (data) {
+        document.getElementById("btc-price").innerText = `$${Math.ceil(data.bpi.USD.rate_float)}`;
+    });
+});
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+fetch("https://api.binance.com/api/v3/ticker/price?symbols=[%22BTCUSDT%22,%22ETHUSDT%22,%22LTCUSDT%22,%22EOSUSDT%22,%22XRPUSDT%22,%22BCHUSDT%22]")
+	.then((response) => response.json())
+	.then(nameCoin)
+	.catch((error) => {
+	});
+function nameCoin(data) {
+	var coins = document.querySelectorAll(".coin-value");
+
+	for (let i = 0; i < coins.length; i++) {
+	    coins[i].textContent = "$" + (+data[i].price).toFixed(2);
+	}
+}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterJS" data-name="Choosing Cards">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Choosing Cards</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;div class="chosen-review-wrapper"&gt;
+    &lt;div class="chosen-review-card active" data-user="reviewCard001"&gt;
+        CHOSEN CARD #1
+    &lt;/div&gt;
+    &lt;div class="chosen-review-card" data-user="reviewCard002"&gt;
+        CHOSEN CARD #2
+    &lt;/div&gt;
+    &lt;div class="chosen-review-card" data-user="reviewCard003"&gt;
+        CHOSEN CARD #3
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="reviews-cards-wrapper"&gt;
+    &lt;div class="reviews-card" id="reviewCard001"&gt;
+        CARD TO SEE #1
+    &lt;/div&gt;
+    &lt;div class="reviews-card visible" id="reviewCard002"&gt;
+        CARD TO SEE #2
+    &lt;/div&gt;
+    &lt;div class="reviews-card visible" id="reviewCard003"&gt;
+        CARD TO SEE #3
+    &lt;/div&gt;
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel css">
+                        <pre>
+                            <code>
+.chosen-review-card {
+    display: none;
+    border: 3px solid #1D79C9;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+.chosen-review-card.active {
+    display: block;
+}
+.reviews-card {
+    display: none;
+    border: 3px solid #E87FC3;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.reviews-card.visible {
+    display: block;
+}
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// CARDS SWITCH
+const chosenCards = document.querySelectorAll('.chosen-review-card');
+const reviewCards = document.querySelectorAll('.reviews-card');
+
+for (let i = 0; i < reviewCards.length; i++) {
+    reviewCards[i].addEventListener('click', () => {
+        chosenCards.forEach(el => el.classList.remove('active'));
+        document.querySelector(`[data-user="${reviewCards[i].id}"]`).classList.add('active');
+        reviewCards.forEach(el => el.classList.add('visible'));
+        document.querySelector(`#${reviewCards[i].id}`).classList.remove('visible');
+    });
+}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterJS" data-name="Console Snippet">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Console Snippet</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+const { log, table, warn, error } = console;
+
+log("Hello world!");
+table(dataObject);
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterJS" data-name="COUNTDOWN 5 MIN">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">COUNTDOWN 5 MIN</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+document.getElementById('timer').innerHTML = 05 + ":" + 11;
+startTimer();
+
+
+function startTimer() {
+    var presentTime = document.getElementById('timer').innerHTML;
+    var timeArray = presentTime.split(/[:]+/);
+    var m = timeArray[0];
+    var s = checkSecond((timeArray[1] - 1));
+    if(s==59){m=m-1}
+    if(m<0){
+        return
+    }
+
+    document.getElementById('timer').innerHTML =
+        m + ":" + s;
+    setTimeout(startTimer, 1000);
+
+}
+
+function checkSecond(sec) {
+    if (sec &lt; 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers &lt; 10
+    if (sec &lt; 0) {sec = "59"};
+    return sec;
+}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterJS" data-name="COUNTDOWN TO THE END OF AN HOUR">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">COUNTDOWN TO THE END OF AN HOUR</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+function getTimeRemaining(endtime) {
+    var t = Date.parse(endtime) - Date.parse(new Date());
+    var seconds = Math.floor((t / 1000) % 60);
+    var minutes = Math.floor((t / 1000 / 60) % 60);
+    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+    };
+}
+
+function initializeClock(id, endtime) {
+    var clock = document.getElementById(id);
+    var daysSpan = clock.querySelector('.days');
+    var hoursSpan = clock.querySelector('.hours');
+    var minutesSpan = clock.querySelector('.minutes');
+    var secondsSpan = clock.querySelector('.seconds');
+
+    function updateClock() {
+    var t = getTimeRemaining(endtime);
+    hoursSpan.innerHTML = t.hours;
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+        clearInterval(timeinterval);
+    }
+    }
+
+    updateClock();
+    var timeinterval = setInterval(updateClock, 1000);
+}
+
+var now = Date.parse(new Date());
+var seconds = Math.floor((now / 1000) % 60);
+var minutes = Math.floor((now / 1000 / 60) % 60);
+var left_to_hour = 60 * 60 * 1000 - (minutes * 60 + seconds) * 1000;
+// add an hour if 15 minutes or less
+if (left_to_hour < (15 * 60000)) {
+    left_to_hour += 3600000
+}
+// add 100 days
+var deadline = new Date(now + left_to_hour + 100 * 24 * 60 * 60 * 1000);
+initializeClock('up-comming-time-2', deadline);
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-card filterJS" data-name="Countdown with LocalStorage">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Countdown with LocalStorage</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;div class="counter-wrapper"&gt;
+	&lt;div class="numbers-wrapper"&gt;
+	    &lt;div class="numbers-block-outer"&gt;
+		&lt;div class="numbers-block-inner"&gt;
+		    &lt;span class="current-number hours"&gt;23&lt;/span&gt; 
+		&lt;/div&gt;
+	    &lt;/div&gt;
+	    &lt;span class="time-measure hours-span"&gt;hh&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class="numbers-wrapper"&gt;
+	    &lt;div class="numbers-block-outer"&gt;
+		&lt;div class="numbers-block-inner"&gt;
+		    &lt;span class="current-number minutes"&gt;59&lt;/span&gt; 
+		&lt;/div&gt;
+	    &lt;/div&gt;
+	    &lt;span class="time-measure minutes-span"&gt;mm&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class="numbers-wrapper"&gt;
+	    &lt;div class="numbers-block-outer"&gt;
+		&lt;div class="numbers-block-inner"&gt;
+		    &lt;span class="current-number seconds">59&lt;/span&gt; 
+		&lt;/div&gt;
+	    &lt;/div&gt;
+	    &lt;span class="time-measure seconds-span"&gt;ss&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+var localStorage = window.localStorage,
+          startDate;
+    
+if (localStorage.getItem('startDate')) {
+  startDate = localStorage.getItem('startDate')
+} else {
+  startDate = new Date();
+  localStorage.setItem('startDate', startDate)
+}
+setTimer(startDate);
+
+function setTimer(startDate) {
+  var deadline = new Date(Date.parse(startDate) + 01 * 24 * 60 * 60 * 1000);
+  initializeClock('countdown', deadline);
+}
+
+// Countdown
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  return {
+     'total': t,
+     'hours': hours,
+     'minutes': minutes,
+     'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.querySelector('.counter-wrapper');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+     var t = getTimeRemaining(endtime);
+
+     hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+     minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+     secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+     if (t.total <= 0) {
+	   startDate = new Date()
+	   localStorage.setItem('startDate', startDate)
+	   var deadline = new Date(Date.parse(startDate) + 24 * 60 * 60 * 1000);
+	   initializeClock('countdown', deadline);
+	   clearInterval(timeinterval);
+     }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterJS" data-name="Cryptocurrencies Widgets">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Cryptocurrencies Widgets</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// Streaming data
+&lt;script&gt;
+    !function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"USD,EUR,CNY,GBP",items:"BTC,ETH,LTC,XMR,DASH",backgroundColor:"FFFFFF",streaming:"1",rounded:"1",boxShadow:"1",border:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CDASH",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();
+&lt;/script&gt;
+<div style="max-width:300px">
+<script>
+    !function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"USD,EUR,CNY,GBP",items:"BTC,ETH,LTC,XMR,DASH",backgroundColor:"FFFFFF",streaming:"1",rounded:"1",boxShadow:"1",border:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CDASH",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();
+</script>
+</div>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// Striped
+&lt;script&gt;
+    !function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"USD,EUR,CNY,GBP",items:"BTC,ETH,LTC,XMR,DASH",backgroundColor:"FFFFFF",striped:"1",rounded:"1",boxShadow:"1",border:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CDASH",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();
+&lt;/script&gt;
+<div style="max-width:300px">
+<script>
+    !function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"USD,EUR,CNY,GBP",items:"BTC,ETH,LTC,XMR,DASH",backgroundColor:"FFFFFF",striped:"1",rounded:"1",boxShadow:"1",border:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CDASH",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();
+</script>
+</div>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// Straight corner
+&lt;script&gt;
+    !function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"USD,EUR,CNY,GBP",items:"BTC,ETH,LTC,XMR,DASH",backgroundColor:"FFFFFF",boxShadow:"1",border:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CDASH",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();
+&lt;/script&gt;
+<div style="max-width:300px">
+<script>
+    !function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"USD,EUR,CNY,GBP",items:"BTC,ETH,LTC,XMR,DASH",backgroundColor:"FFFFFF",boxShadow:"1",border:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CDASH",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();
+</script>
+</div>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// Without border
+&lt;script&gt;
+    !function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"USD,EUR,CNY,GBP",items:"BTC,ETH,LTC,XMR,DASH",backgroundColor:"FFFFFF",rounded:"1",boxShadow:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CDASH",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();
+&lt;/script&gt;
+<div style="max-width:300px">
+<script>
+    !function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"USD,EUR,CNY,GBP",items:"BTC,ETH,LTC,XMR,DASH",backgroundColor:"FFFFFF",rounded:"1",boxShadow:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CDASH",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();
+</script>
+</div>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// Color
+&lt;script&gt;
+    !function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"USD,EUR,CNY,GBP",items:"BTC,ETH,LTC,XMR,DASH",backgroundColor:"007BFF",rounded:"1",boxShadow:"1",border:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CDASH",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();
+&lt;/script&gt;
+<div style="max-width:300px">
+<script>
+    !function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"USD,EUR,CNY,GBP",items:"BTC,ETH,LTC,XMR,DASH",backgroundColor:"007BFF",rounded:"1",boxShadow:"1",border:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CDASH",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();
+</script>
+</div>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// Price of fiat
+&lt;script&gt;
+    !function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"BTC,ETH,LTC,XMR",items:"USD,CAD,RUB,GBP",backgroundColor:"FFFFFF",streaming:"1",rounded:"1",boxShadow:"1",border:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=USD%2CCAD%2CRUB%2CGBP",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();
+&lt;/script&gt;
+<div style="max-width:300px">
+<script>
+    !function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"BTC,ETH,LTC,XMR",items:"USD,CAD,RUB,GBP",backgroundColor:"FFFFFF",streaming:"1",rounded:"1",boxShadow:"1",border:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=USD%2CCAD%2CRUB%2CGBP",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();
+</script>
+</div>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// Exchange rates
+&lt;script&gt;
+    !function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"USD,BTC",items:"UAH,RUB,EUR,GBP,CAD,AUD",backgroundColor:"FFFFFF",streaming:"1",rounded:"1",boxShadow:"1",border:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=UAH%2CRUB%2CEUR%2CGBP%2CCAD%2CAUD",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();
+&lt;/script&gt;
+<div style="max-width:300px">
+<script>
+    !function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"USD,BTC",items:"UAH,RUB,EUR,GBP,CAD,AUD",backgroundColor:"FFFFFF",streaming:"1",rounded:"1",boxShadow:"1",border:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=UAH%2CRUB%2CEUR%2CGBP%2CCAD%2CAUD",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();
+</script>
+</div>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// One tab USD
+&lt;script&gt;
+    !function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"USD",items:"BTC,ETH,LTC,XMR,DASH",backgroundColor:"FFFFFF",rounded:"1",boxShadow:"1",border:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CDASH",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();
+&lt;/script&gt;
+<div style="max-width:300px">
+<script>
+    !function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"USD",items:"BTC,ETH,LTC,XMR,DASH",backgroundColor:"FFFFFF",rounded:"1",boxShadow:"1",border:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=BTC%2CETH%2CLTC%2CXMR%2CDASH",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();
+</script>
+</div>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// Single
+&lt;script&gt;
+    !function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"USD",items:"BTC",backgroundColor:"6C757D",streaming:"1",rounded:"1",boxShadow:"1",border:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=BTC",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();
+&lt;/script&gt;
+<div style="max-width:300px">
+<script>
+    !function(){var e=document.getElementsByTagName("script"),t=e[e.length-1],n=document.createElement("script");function r(){var e=crCryptocoinPriceWidget.init({base:"USD",items:"BTC",backgroundColor:"6C757D",streaming:"1",rounded:"1",boxShadow:"1",border:"1"});t.parentNode.insertBefore(e,t)}n.src="https://co-in.io/widget/pricelist.js?items=BTC",n.async=!0,n.readyState?n.onreadystatechange=function(){"loaded"!=n.readyState&&"complete"!=n.readyState||(n.onreadystatechange=null,r())}:n.onload=function(){r()},t.parentNode.insertBefore(n,null)}();
+</script>
+</div>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterJS" data-name="Current Date">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Current Date</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// 01/01/2022
+let today = new Date(); 
+let dd = String(today.getDate()).padStart(2, '0'); 
+let mm = String(today.getMonth() + 1).padStart(2, '0');
+let yyyy = today.getFullYear(); 
+today = mm + '/' + dd + '/' + yyyy; 
+let currentDate = document.querySelectorAll('.current-date'); 
+for (let i = 0; i &lt; currentDate.length; i++) { currentDate[i].innerHTML = today; } 
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// January 01 2022
+let newData = new Date();
+let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+document.querySelector(".current-date").innerHTML = months[newData.getMonth()] + ' ' + newData.getDate();
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+		    
+		    <div class="item-card filterJS" data-name="Current Time & Countdown">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Current Time & Countdown</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;p class="warning"&gt;
+	из-за чрезвычайно высокого спроса со стороны СМИ мы закроем регистрацию с 
+	&lt;strong class="today-date"&gt;ДД/ММ/ГГГГ&lt;/strong&gt; – СПЕШИТЕ 
+	&lt;span class="countdown"&gt;мм:сс&lt;/span&gt;
+&lt;/p&gt; 
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// Countdown
+function startTimer(duration, display) {
+	var timer = duration, minutes, seconds;
+	setInterval(function () {
+	    minutes = parseInt(timer / 60, 10);
+	    seconds = parseInt(timer % 60, 10);
+
+	    minutes = minutes < 10 ? "0" + minutes : minutes;
+	    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+	    display.innerText = minutes + ":" + seconds;
+
+	    if (--timer < 0) {
+		timer = 0;
+	    }
+	}, 1000);
+}
+
+(function() {
+	//Date
+	let d = new Date();
+	let month = d.getMonth() + 1;
+	let day = d.getDate();
+	let output = (day < 10 ? '0' : '') + day + '/' + (month < 10 ? '0' : '') + month + '/' + d.getFullYear();
+	document.querySelector('.today-date').innerHTML = output;
+
+	let time = 60 * 6.4,
+	    display = document.querySelector('.countdown');
+	startTimer(time, display);
+})();
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterJS" data-name="Current Time">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Current Time</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+document.querySelectorAll('.time').forEach((el) => {
+    el.innerText = new Date().getHours() + ":" + new Date().getMinutes() + ":" + new Date().getSeconds();
+})
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterJS" data-name="Current Year">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Current Year</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+document.querySelectorAll('.year').forEach((el) => {
+    el.innerText = new Date().getFullYear();
+})
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-card filterJS" data-name="Lazy Loading Images">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Lazy Loading Images</span>
+                    </div> 
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;img loading="lazy" src="assets/img/loading.gif" data-src="assets/img/image.jpg" alt=""&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// Lazy Loading Images
+function isVisible(elem) {
+    let coords = elem.getBoundingClientRect();
+    let windowHeight = document.documentElement.clientHeight;
+    let topVisible = coords.top > 0 && coords.top &lt; windowHeight;
+    let bottomVisible = coords.bottom &lt; windowHeight && coords.bottom > 0;
+    return topVisible || bottomVisible;
+}
+
+function showVisible() {
+    for (let img of document.querySelectorAll('img')) {
+        let realSrc = img.dataset.src;
+        if (!realSrc) continue;
+
+        if (isVisible(img)) {
+            img.src = realSrc;
+            img.dataset.src = '';
+        }
+    }
+}
+
+showVisible();
+window.onscroll = showVisible;
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterJS" data-name="Local Storage Snippet">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Local Storage Snippet</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+const storage = {
+  get: (key, defaultValue = null) => {
+    const value = localStorage.getItem(key);
+    return value ? JSON.parse(value) : defaultValue;
+  },
+  set: (key, value) => localStorage.setItem(key, JSON.stringify(value)),
+  remove: (key) => localStorage.removeItem(key),
+  clear: () => localStorage.clear(),
+};
+
+storage.set("motto", "Eat, Sleep, Code, Repeat");
+storage.get("motto");
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-card filterJS" data-name="Menu Items Highlighting on Scroll">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Menu Items Highlighting on Scroll</span>
+                    </div> 
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;ul class="nav-list"&gt;
+	&lt;li class="nav-list-item about active"&gt;About&lt;/li&gt;
+	&lt;li class="nav-list-item services"&gt;Services&lt;/li&gt;
+	&lt;li class="nav-list-item reviews"&gt;Reviews&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;section id="about"&gt;
+	About
+&lt;/section&gt;
+&lt;section id="services"&gt;
+	Services
+&lt;/section&gt;
+&lt;section id="reviews"&gt;
+	Reviews
+&lt;/section&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// MENU ITEMS HIGHLIGHTING
+const sections = document.querySelectorAll('section');
+const navListItems = document.querySelectorAll('.nav-list-item');
+
+window.addEventListener('scroll', () => {
+    let current = '';
+
+    sections.forEach( section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= (sectionTop - sectionHeight)) {
+            current = section.getAttribute('id');
+        }
+    })
+
+    navListItems.forEach( item => {
+        item.classList.remove('active');
+        if (item.classList.contains(current)) {
+            item.classList.add('active');
+        }
+    })
+})
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-card filterJS" data-name="Modal">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Modal</span>
+                    </div> 
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;button class="btn flex center just-center license-modal-call"&gt;
+    Enlarge photo 
+    &lt;img src="assets/img/svg/zoom.svg" alt="zoom" class="zoom-img"&gt;
+&lt;/button&gt;
+
+&lt;div class="modal license-modal"&gt;
+    &lt;img src="assets/img/close.png" alt="close" class="close-icon"&gt;
+    &lt;div class="modal-content"&gt;
+        &lt;img src="assets/img/license.png" alt="license" class="license-img"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel css">
+                        <pre>
+                            <code>
+/*==== MODAL ===================*/
+.modal {
+    position: fixed;
+    z-index: -3;
+    opacity: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: 300px;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    padding: 2rem 0;
+    display: grid;
+    place-items: center center;
+    background-color: rgba(0,0,0,.8);
+    transition: .4s
+}
+.modal.active {
+    z-index: 101;
+    opacity: 1;
+}
+.modal .close-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer
+}
+.modal-content {
+    width: 100%;
+    max-width: 500px;
+}
+.modal-content .license-img {
+    width: 100%;
+    height: auto;
+}
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// MODAL
+const licenseModalCall = document.querySelectorAll(".license-modal-call");
+const licenseModalClose = document.querySelector(".close-icon");
+const licenseModal = document.querySelector(".license-modal");
+const modalContent = document.querySelector(".modal-content");
+
+function openModal() {
+    licenseModal.classList.add('active');
+}
+
+function closeModal() {
+    if (licenseModal.classList.contains('active')) {
+        licenseModal.classList.remove('active');
+    }
+}
+
+licenseModalCall.forEach(el => el.addEventListener('click', openModal));
+
+licenseModalClose.addEventListener('click', closeModal);
+
+licenseModal.addEventListener('click', closeModal);
+
+modalContent.addEventListener('click', e => e.stopPropagation());
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-card filterJS" data-name="Pagination">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Pagination</span>
+                    </div> 
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;div class="container"&gt;
+    &lt;div class="posts"&gt;
+        &lt;div class="post-page"&gt;
+            &lt;div class="post"&gt;Page 1&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="post-page"&gt;
+            &lt;div class="post"&gt;Page 2&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="post-page"&gt;
+            &lt;div class="post"&gt;Page 3&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="post-page"&gt;
+            &lt;div class="post"&gt;Page 4&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="pagination flex"&gt;
+        &lt;button class="btn btn-prev" onclick="toPrevPage()"&gt;
+            Prev
+        &lt;/button&gt;
+        &lt;ul class="pages-list flex"&gt;&lt;/ul&gt;
+        &lt;button class="btn btn-next" onclick="toNextPage()"&gt;
+            Next
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel css">
+                        <pre>
+                            <code>
+.container {
+    width: 88%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+.pagination {
+    gap: 2rem;
+    align-items: center;
+}
+.page-link {
+    list-style: none;
+    margin: 0.5rem 0.2rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+    background-color: #e4e7ec;
+    cursor: pointer;
+}
+.page-link.active {
+    background-color: #4b80f3;
+    color: #fff;
+}
+.post-page {
+    display: none;
+    margin: 2rem 0;
+    padding: 1rem;
+    border-radius: 4px;
+    background-color: #ddd;
+}
+.post-page.active {
+    display: block;
+}
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+const select = (selector, scope = document) => {
+    return scope.querySelector(selector);
+};
+const selectAll = (selector, scope = document) => {
+    return scope.querySelectorAll(selector);
+};
+
+const postPages = selectAll('.post-page');
+const pagesList = select('.pages-list');
+
+let currentPage = 1;
+
+postPages[0].classList.add('active');
+
+for (i = 0; i < postPages.length; i++) {
+    let pageLinkItem = document.createElement("li");
+    pageLinkItem.setAttribute('class', "page-link");
+    pageLinkItem.setAttribute('onclick', "setActivePageLink()");
+    pagesList.appendChild(pageLinkItem);
+    pageLinkItem.innerText = i + 1;
+    postPages[i].setAttribute('data-page-number', i + 1);
+}
+
+const pageLinks = selectAll('.page-link');
+pageLinks[0].classList.add('active');
+
+const switchPage = () => {
+    postPages.forEach((page) => {
+        page.classList.remove('active');
+        postPages[currentPage - 1].classList.add('active');
+    });
+};
+
+const setActivePage = () => {
+    pageLinks.forEach(pageLink => pageLink.classList.remove('active'));
+    pageLinks[currentPage - 1].classList.add('active');
+};
+
+const setActivePageLink = () => {
+    pageLinks.forEach(pageLink => pageLink.classList.remove('active'));
+    event.target.classList.add('active');
+    currentPage = event.target.innerText;
+    switchPage();
+};
+
+const toPrevPage = () => {
+    if (currentPage > 1) {
+        currentPage--;
+        setActivePage();
+        switchPage();
+    }
+};
+
+const toNextPage = () => {
+    if (currentPage < pageLinks.length) {
+        currentPage++;
+        setActivePage();
+        switchPage();
+    }
+};
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-card filterJS" data-name="Parallax Effect">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Parallax Effect</span>
+                    </div> 
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;section class="hero-section"&gt;
+	&lt;div class="hero-section-bg"&gt;&lt;/div&gt;
+	&lt;div class="container flex center just-between"&gt;
+		CONTENT
+	&lt;/div&gt;
+&lt;/section&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel css">
+                        <pre>
+                            <code>
+body {
+    height: auto !important;
+}
+.hero-section {
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
+}
+.hero-section-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000 url('../img/hero-bg.jpg') no-repeat center / cover;
+}
+.hero-section .container {
+    position: relative;
+    z-index: 5;
+}
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// HERO PARALLAX EFFECT
+window.addEventListener('scroll', () => {
+    const heroSectionBg = document.querySelector('.hero-section-bg');
+    heroSectionBg.style.transform = `translateY(${window.scrollY / 5}px)`;
+})
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-card filterJS" data-name="Placeholders changing">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Placeholders changing</span>
+                    </div> 
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+document.querySelectorAll('input[name$="f_name"]').forEach(el => el.placeholder="名");
+document.querySelectorAll('input[name$="l_name"]').forEach(el => el.placeholder="姓");
+document.querySelectorAll('input[name$="email"]').forEach(el => el.placeholder="電子郵件");
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-card filterJS" data-name="Progress Bar">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Progress Bar</span>
+                    </div> 
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;div class="progress-container"&gt;
+    &lt;div class="progress-bar" id="progress_bar"&gt;&lt;/div&gt;
+&lt;/div&gt;	
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel css">
+                        <pre>
+                            <code>
+.progress-container {
+    width: 100%;
+    height: 5px;
+    background: #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000
+}
+.progress-bar {
+    height: 5px;
+    background: #0071c6;
+    width: 0%
+}	
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+window.onscroll = function() {
+	loadProgress()
+};
+
+function loadProgress() {
+	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	var scrolled = (winScroll / height) * 100;
+	document.getElementById("progress_bar").style.width = scrolled + "%";
+}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterJS" data-name="Query Selector Snippet">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Query Selector Snippet</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+const select = (selector, scope = document) => {
+    return scope.querySelector(selector);
+};
+const selectAll = (selector, scope = document) => {
+    return scope.querySelectorAll(selector);
+};
+
+const year = select('#year', formElem);
+const date = selectAll('.date');
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterJS" data-name="Random Integer">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Random Integer</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// from min to max
+const random = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+document.querySelector('#randomInt').innerText = random(200, 300);
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterJS" data-name="Range Slider">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="js" height="14" class="item-name-icon"> 
+                        <span class="name-span">Range Slider</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;div class="pricing-range-wrapper"&gt;
+	&lt;input type="range" min="0" max="210" value="105" class="pricing-range-input"&gt;
+	&lt;div class="range-input-value">&lt;/div&gt;
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel css">
+                        <pre>
+                            <code>
+.pricing-range-input {
+    width: 100%;
+    height: 10px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background: linear-gradient(154.24deg, #85FED6 4.45%, #4EDAAC 83.73%);
+    background-blend-mode: luminosity;
+    mix-blend-mode: normal;
+    box-shadow: 1px 5px 30px rgba(83, 215, 171, 0.5);
+    border-radius: 10px;
+}
+.pricing-range-wrapper {
+    width: 100%;
+    height: 10px;
+    margin-bottom: 5rem;
+    position: relative;
+}
+.pricing-range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(154.24deg, #85FED6 4.45%, #4EDAAC 83.73%);
+    background-blend-mode: luminosity;
+    mix-blend-mode: normal;
+    border: 3px solid #FFFFFF;
+    box-shadow: 1px 5px 30px rgba(83, 215, 171, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.pricing-range-input::-moz-range-thumb {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(154.24deg, #85FED6 4.45%, #4EDAAC 83.73%);
+    background-blend-mode: luminosity;
+    mix-blend-mode: normal;
+    border: 3px solid #FFFFFF;
+    box-shadow: 1px 5px 30px rgba(83, 215, 171, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.range-input-value {
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    width: 82px;
+    height: 35px;
+    background: #282323;
+    border-radius: 3px;
+    color: #fff;
+    display: grid;
+    place-items: center center;
+    transform:translateX(-50%);
+}
+.range-input-value::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #282323;
+	-webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
+	        clip-path: polygon(0 0, 100% 0, 50% 100%);
+    position: absolute;
+    left: calc(50% - 5px);
+    bottom: -10px;
+}
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+let slider = document.querySelector(".pricing-range-input");
+let output = document.querySelector(".range-input-value");
+output.innerHTML = slider.value;
+
+slider.addEventListener('input', function () {
+    output.innerHTML = this.value;
+    output.style.left = `${100 / this.max * this.value}%`;
+});
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-card filterJS" data-name="Search Filter">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Search Filter</span>
+                    </div> 
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;input type="text" class="search-input" id="searchInput" placeholder="Search..." /&gt;
+
+&lt;div class="item" data-name="First Item"&gt;First item&lt;/div&gt;
+&lt;div class="item" data-name="Second Item"&gt;Second item&lt;/div&gt;
+&lt;div class="item" data-name="Third Item"&gt;Third item&lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel css">
+                        <pre>
+                            <code>
+.item {
+    /*== Your styles ==*/
+}
+.item.hide {
+    display: none;
+}
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+const searchInput = document.querySelector("#searchInput");
+const items = document.querySelectorAll('.item');
+
+searchInput.addEventListener('input', (e) => {
+    let searchValue = e.target.value.toLowerCase().trim();
+    
+    items.forEach( elem => {
+        !elem.dataset.name.toLowerCase().includes(searchValue) ?
+        elem.classList.add('hide') :
+        elem.classList.remove('hide');
+    })
+})
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-card filterJS" data-name="ScrollIntoView">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">ScrollIntoView</span>
+                    </div> 
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;a href="javascript:void(0)" onclick="scrollToElem('#header')"&gt;&lt;/a&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+const scrollToElem = (elem) =&gt; {
+    document.querySelector(elem).scrollIntoView({behavior:"smooth"});
+}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-card filterJS" data-name="ScrollIntoView Method Polyfill">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">ScrollIntoView Method Polyfill</span>
+                    </div> 
+                </button>
+                <div class="item-content">
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// Polyfill to improve Element.scrollIntoView()
+
+var scrollIntoView = (function () {
+
+// Original implementation is used for backwards compatibility
+var scrollIntoView_original = Element.prototype.scrollIntoView;
+
+function scrollIntoView(options) {
+
+  // Use traditional scrollIntoView when traditional argument is given.
+  if (options === undefined || options === true || options === false) {
+    scrollIntoView_original.apply(this, arguments);
+    return;
+  }
+
+  var window = this.ownerDocument.defaultView;
+
+  // Read options.
+  if (options === undefined)  options = {};
+  if (options.center === true) {
+    options.vertical = 0.5;
+    options.horizontal = 0.5;
+  }
+  else {
+    if (options.vertical === undefined)  options.vertical = 0.0;
+    if (options.horizontal === undefined)  options.horizontal = 0.0;
+  }
+
+  // Fetch positional information.
+  var rect = this.getBoundingClientRect();
+
+  // Read the viewport height&width, excluding scrollbars. Browser behaviour appears inconsistent
+  // when rendering in quirks mode, but hopefully this formula covers every scenario.
+  var viewPortHeight = document.documentElement.clientHeight || document.body.clientHeight;
+  var viewPortWidth = document.documentElement.clientWidth || document.body.clientWidth;
+
+  // Determine location to scroll to.
+  var targetY = window.scrollY + rect.top - (viewPortHeight - this.offsetHeight) * options.vertical;
+  var targetX = window.scrollX + rect.left - (viewPortWidth - this.offsetWidth) * options.horizontal;
+
+  // Scroll.
+  window.scroll(targetX, targetY);
+
+  // If window is inside a frame, center that frame in the parent window. Recursively.
+  if (window.parent !== window) {
+    // We are inside a scrollable element.
+    var frame = window.frameElement;
+    scrollIntoView.call(frame, options);
+  }
+}
+
+// Add a method that replaces the browser's implementation.
+function installPolyfill() {
+  Element.prototype.scrollIntoView = scrollIntoView;
+}
+scrollIntoView.installPolyfill = installPolyfill;
+
+return scrollIntoView;
+
+})();
+
+
+// CommonJS/Node support.
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = scrollIntoView;
+}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-card filterJS" data-name="Slugify">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Slugify</span>
+                    </div> 
+                </button>
+                <div class="item-content">
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+const slugify = (string, separator = "-") => {
+  return string
+    .toString() // Cast to string (optional)
+    .toLowerCase() // Convert the string to lowercase letters
+    .trim() // Remove whitespace from both sides of a string (optional)
+    .replace(/\s+/g, separator) // Replace spaces with -
+    .replace(/[^\w\-]+/g, "") // Remove all non-word chars
+    .replace(/\_/g, separator) // Replace _ with -
+    .replace(/\-\-+/g, separator) // Replace multiple - with single -
+    .replace(/\-$/g, ""); // Remove trailing -
+};
+
+slugify("Hello, World!");
+// Expected output: "hello-world"
+
+slugify("Hello, Universe!", "_");
+// Expected output: "hello_universe"
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterJS" data-name="Splide Carousel">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="js" height="14" class="item-name-icon"> 
+                        <span class="name-span">Splide Carousel</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <a href="https://splidejs.com/guides/getting-started/" target="_blank">https://splidejs.com/guides/getting-started/</a>
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;section class="splide" aria-label="Splide Basic HTML Example"&gt;
+  &lt;div class="splide__track"&gt;
+		&lt;ul class="splide__list"&gt;
+			&lt;li class="splide__slide">Slide 01&lt;/li&gt;
+			&lt;li class="splide__slide">Slide 02&lt;/li&gt;
+			&lt;li class="splide__slide">Slide 03&lt;/li&gt;
+		&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+var splide = new Splide( '.splide', {
+    perPage: 3,
+    type   : 'loop',
+    perMove: 1,
+});
+if (document.body.clientWidth < 680) {
+    var splide = new Splide( '.splide', {
+        perPage: 1,
+        type   : 'loop',
+        perMove: 1,
+    });
+}
+splide.mount();
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-card filterJS" data-name="Stars Rating Input">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="js" height="14" class="item-name-icon"> 
+                        <span class="name-span">Stars Rating Input</span>
+                    </div> 
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;div class="input-wrapper rate-input-wrapper flex center"&gt;
+    &lt;span&gt;Rate broker:&lt;/span&gt; 
+    &lt;label class="rating-label"&gt;
+        &lt;input
+          class="rating"
+          max="5"
+          oninput="this.style.setProperty('--value', `${this.valueAsNumber}`);"
+          step="0.1"
+          style="--value:0.0"
+          type="range"
+          value="0.0"&gt;
+    &lt;/label&gt;
+    &lt;span class="rating-input-value"&gt;0.0&lt;/span&gt;
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel css">
+                        <pre>
+                            <code>
+.rate-input-wrapper {
+    padding: 1.5rem 2rem;;
+    border-bottom: 1px solid #DCDCDC;
+    gap: 14px;
+}
+.rating {
+    --dir: right;
+    --fill: #FFC132;
+    --fillbg: rgba(100, 100, 100, 0.15);
+    --star: url('https://redhatdev16.github.io/snippets/assets/icons/grey-star-transparent.svg');
+    --stars: 5;
+    --starsize: 1.5rem;
+    --symbol: var(--star);
+    --value: 1;
+    --w: calc(var(--stars) * var(--starsize));
+    --x: calc(100% * (var(--value) / var(--stars)));
+    block-size: var(--starsize);
+    inline-size: var(--w);
+    position: relative;
+    touch-action: manipulation;
+    -webkit-appearance: none;
+}
+[dir="rtl"] .rating {
+    --dir: left;
+}
+.rating::-moz-range-track {
+    background: linear-gradient(to var(--dir), var(--fill) 0 var(--x), var(--fillbg) 0 var(--x));
+    block-size: 100%;
+    mask: repeat left center/var(--starsize) var(--symbol);
+}
+.rating::-webkit-slider-runnable-track {
+    background: linear-gradient(to var(--dir), var(--fill) 0 var(--x), var(--fillbg) 0 var(--x));
+    block-size: 100%;
+    mask: repeat left center/var(--starsize) var(--symbol);
+    -webkit-mask: repeat left center/var(--starsize) var(--symbol);
+}
+.rating::-moz-range-thumb {
+    height: var(--starsize);
+    opacity: 0;
+    width: var(--starsize);
+}
+.rating::-webkit-slider-thumb {
+    height: var(--starsize);
+    opacity: 0;
+    width: var(--starsize);
+    -webkit-appearance: none;
+}
+.rating, .rating-label {
+    display: block;
+}
+                            </code>
+                        </pre>
+                    </div>
+
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+document.querySelector('.rating').addEventListener('input', () =&gt; {
+    document.querySelector('.rating-input-value').innerText = document.querySelector('.rating').value;
+});
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-card filterJS" data-name="Sticky Element on Scroll">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Sticky Element on Scroll</span>
+                    </div> 
+                </button>
+                <div class="item-content">
+                    <div class="code-panel css">
+                        <pre>
+                            <code>
+.element {
+    /*== Your styles==*/
+}
+.element.sticky {
+    position: fixed;
+    z-index: 12;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+const stickyElement = document.querySelector(".element");
+let stop = stickyElement.offsetTop;
+let docBody = document.documentElement || document.body.parentNode || document.body;
+let hasOffset = window.pageYOffset !== undefined;
+let scrollTop;
+
+window.addEventListener('scroll', (e) => {
+    scrollTop = hasOffset ? window.pageYOffset : docBody.scrollTop;
+
+    scrollTop >= stop ? 
+    stickyElement.classList.add('sticky') :
+    stickyElement.classList.remove('sticky');
+})
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-card filterJS" data-name="Sticky Header on Scroll">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Sticky Header on Scroll</span>
+                    </div> 
+                </button>
+                <div class="item-content">
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header');
+    header.classList.toggle('sticky', window.scrollY &gt; 0);
+})
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-card filterJS" data-name="Times for function">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Times for function</span>
+                    </div> 
+                </button>
+                <div class="item-content">
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+const times = (func, n) => {
+    Array.from(Array(n)).forEach(() => {
+        func();
+    });
+};
+    
+times(() => {
+    yourFunction();
+}, 3); // runs 3 times
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterJS" data-name="Winners Widget">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Winners Widget</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;div class="widget"&gt;
+    &lt;div class="widget-inner"&gt;
+        &lt;div class="content"&gt;
+            &lt;div class="random-user"&gt;
+                &lt;div class="img"&gt;
+                    &lt;img id="winnerImg" alt="Photo" width="57" height="57" src="assets/img/ui-names/photos/male/23.jpg"&gt;
+                &lt;/div&gt;
+                &lt;div class="user-info"&gt;
+                    &lt;span class="name" id="winnerName"&gt;Leo&lt;/span&gt;
+                    &lt;spam&gt;acaba de ganar&lt;/spam&gt;
+                    &lt;span class="profit"&gt;
+                        &lt;span class="currency"&gt;$&lt;/span&gt; 
+                        &lt;span id="winnerProfit"&gt;375.80&lt;/span&gt;
+                    &lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+let winnersData = [
+    {"name":"Nadine","surname":"Nelson","photo":"/assets/img/ui-names/photos/female/21.jpg","profit":"575.80"},
+    {"name":"Alice","surname":"Smith","photo":"/assets/img/ui-names/photos/female/18.jpg","profit":"315.20"},
+    {"name":"Steffi","surname":"Williams","photo":"/assets/img/ui-names/photos/female/9.jpg","profit":"455.10"}
+];
+
+let index = 0;
+const winnerName = document.querySelector('#winnerName');
+const winnerImg = document.querySelector('#winnerImg');
+const winnerProfit = document.querySelector('#winnerProfit');
+
+function change() {
+    winnerName.innerHTML = winnersData[index].name;
+    winnerImg.src = winnersData[index].photo;
+    winnerProfit.innerHTML = winnersData[index].profit;
+    index > (winnersData.length - 2) ? index = 0 : index++;
+}
+
+window.onload = function () {
+    setInterval(change, 1000);
+};
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-card filterJS" data-name="Yesterday">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/js.png" alt="javascript" height="14" class="item-name-icon"> 
+                        <span class="name-span">Yesterday</span>
+                    </div> 
+                </button>
+                <div class="item-content">
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+let yesterday = new Date(new Date());
+
+yesterday.setDate(yesterday.getDate() - 1);
+
+let yesterdayDate = document.querySelectorAll('.yesterday');
+
+yesterdayDate.forEach((el) => {
+	el.innerText = yesterday.toDateString();
+});
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// Two days ago:
+const twoDaysAgo = new Date((new Date()).valueOf() - 1000*60*60*24*2);
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// An hour ago:
+const oneHourAgo = new Date((new Date()).valueOf() - 1000*60*60);
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterJQUERY" data-name="Current Year">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/jquery.png" alt="jquery" height="14" class="item-name-icon"> 
+                        <span class="name-span">Current Year</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <a href="https://releases.jquery.com/" target="_blank">https://releases.jquery.com/</a>
+                    <div class="code-panel jquery">
+                        <pre>
+                            <code>
+$('.year').html(new Date().getFullYear());
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterJQUERY" data-name="RANGE SLIDER">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/jquery.png" alt="jquery" height="14" class="item-name-icon"> 
+                        <span class="name-span">RANGE SLIDER</span> 
+                    </div>
+                </button>
+                <div class="item-content">
+                    <a href="https://releases.jquery.com/" target="_blank">https://releases.jquery.com/</a>
+                    <a href="http://ionden.com/a/plugins/ion.rangeSlider/start.html" target="_blank">http://ionden.com/a/plugins/ion.rangeSlider/start.html</a>
+                    <div class="code-panel html">
+                        <pre>
+                            <code>			    
+			    
+&lt;form action="javascript:void(0)" class="profit-calculator-wrapper animated"&gt;
+	&lt;h3 class="invest-heading"&gt;tu inversión:&lt;/h3&gt;
+	&lt;div class="your-invest"&gt;
+		&lt;input type="text" class="js-range-slider irs-hidden-input" name="my_range" value="150" tabindex="-1" readonly="" /&gt;
+	&lt;/div&gt;
+	&lt;div class="your-profit"&gt;
+		&lt;label class="profit-label"&gt;Sus ganancias:&lt;/label&gt;
+		&lt;h3 id="calcResult">&lt;/h3&gt;
+	&lt;/div&gt;
+	&lt;div class="range-btn"&gt;
+		&lt;button class="btn" onclick="scrollToForm()"&gt;
+			obtener beneficios ahora
+		&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/form&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel css">
+                        <pre>
+                            <code>
+.profit-calculator-wrapper {
+    max-width: 765px;
+    text-align: center;
+    margin: 2.25rem auto 0 auto;
+}
+.invest-heading {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #110804;
+}
+.your-invest {
+    background-color: #FFFFFF;
+    border-radius: var(--border-radius);
+    margin: 1rem 0;
+    padding: 2rem;
+}
+.profit-calculator-wrapper .irs--round .irs-bar {
+    background-color: #F6CD2F !important;
+}
+.profit-calculator-wrapper .irs--round .irs-single {
+    font-size: 14px;
+    text-shadow: none;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #F6CD2F;
+}
+.profit-calculator-wrapper .irs--round .irs-single:before {
+    border-top-color: transparent;
+}
+.profit-calculator-wrapper .irs--round .irs-handle {
+    border: 4px solid #F6CD2F;
+    cursor: grab  
+}
+.profit-calculator-wrapper .irs--round .irs-grid-text {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #4B423E;
+} 
+.irs--round .irs-min, .irs--round .irs-max {
+    display: none;
+}
+.your-invest {
+    margin-bottom: 2rem;
+}
+.your-invest input {
+    display: none;
+}
+.profit-label {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #110804;
+}
+#calcResult {
+    font-weight: 800;
+    font-size: 48px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #F6CD2F;
+    text-shadow: 0px 2px 3px #000000;
+    margin: 1.5rem 0 3rem 0 !important;
+}
+.range-btn .btn {
+    background-color: #EAAB00;
+}
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel jquery">
+                        <pre>
+                            <code>
+$(document).ready(function () {
+	$(function () {
+		let curCurency = '<span id="curency"> $</span>';
+		$(".js-range-slider").ionRangeSlider({
+			skin: "round",
+			min: 345,
+			max: 2000,
+			from: 1000,
+			max_postfix: "+",
+			postfix: " $",
+			grid: true,
+			onStart: function (data) {
+				$("#calcResult").html(
+					Math.round(data.from * 23.2 + data.from) + curCurency,
+				);
+			},
+			onChange: function (data) {
+				$("#calcResult").html(
+					Math.round(data.from * 23.2 + data.from) + curCurency,
+				);
+			},
+		});
+	});
+});
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterPHP" data-name="POSTBACK">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/php.png" alt="php" height="14" class="item-name-icon"> 
+                        <span class="name-span">POSTBACK</span>
+                    </div> 
+                </button>
+                <div class="item-content">
+                    <div class="code-panel php">
+                        <pre>
+                            <code>
+// в сенкью-пейдже
+// добавляется саб для клика
+'sub8'=> $_GET['click'],
+
+// а потом функция, которая передает этот клик в трекер
+$voluum_conv = file_get_contents("https://groasis-guaricet.xyz/postback?cid=".$_GET['click'].'&et=lead');
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterPHP" data-name="Test Form Sending">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/php.png" alt="php" height="14" class="item-name-icon"> 
+                        <span class="name-span">Test Form Sending</span>
+                    </div> 
+                </button>
+                <div class="item-content">
+                    <div class="code-panel html">
+                        <pre>
+                            <code>
+&lt;div class="form animated"&gt;
+    &lt;form action="#" id="form" class="form-body"&gt;
+        &lt;h3 class="form-heading"&gt;
+            Ціна курсу - 95 $
+        &lt;/h3&gt;
+        &lt;div class="form-item"&gt;
+            &lt;label for="formName" class="form-label"&gt;Ваше Ім'я в Instagram:&lt;/label&gt;
+            &lt;input type="text" id="formName" name="name" class="form-input name required" placeholder="Instagram nickname"&gt;
+        &lt;/div&gt;
+        &lt;div class="form-item"&gt;
+            &lt;label for="formEmail" class="form-label"&gt;Ваш E-mail:&lt;/label&gt;
+            &lt;input type="text" id="formEmail" name="email" class="form-input email required" placeholder="E-mail"&gt;
+        &lt;/div&gt;
+        &lt;button type="submit" class="form-btn btn"&gt;ЗАБРОНЮВАТИ&lt;/button&gt;
+        &lt;div class="message-success"&gt;
+            Ми отримали Ваші дані. Очікуйте подальше повідомлення.
+        &lt;/div&gt;
+        &lt;div class="message-error"&gt;
+            Щось пішло не так. Заповніть форму ще раз, будь ласка.
+        &lt;/div&gt;
+        &lt;div class="message-fill"&gt;
+            Заповніть всi поля, будь ласка.
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel js">
+                        <pre>
+                            <code>
+// FORM SENDING
+const form = document.getElementById('form');
+const messageSuccess = document.querySelector('.message-success');
+const messageError = document.querySelector('.message-error');
+const messageFill = document.querySelector('.message-fill');
+form.addEventListener('submit', formSend);
+
+async function formSend(e) {
+    e.preventDefault();
+
+    let error = formValidate(form);
+
+    let formData = new FormData(form);
+
+    if (error === 0) {
+        form.classList.add('sending');
+        let response = await fetch('send.php', {
+            method: 'POST',
+            body: formData
+        });
+        if (response.ok) {
+            // let result = await response.json();
+            // alert(result.message);
+            form.reset();
+            form.classList.remove('sending');
+            messageSuccess.classList.add('visible');
+            messageError.classList.remove('visible');
+            messageFill.classList.remove('visible');
+        } else {
+            // alert('fetch error!');
+            form.classList.remove('sending');
+            messageSuccess.classList.remove('visible');
+            messageError.classList.add('visible');
+            messageFill.classList.remove('visible');
+            form.reset();
+        }
+    } else {
+        messageSuccess.classList.remove('visible');
+        messageError.classList.remove('visible');
+        messageFill.classList.add('visible');
+    }
+}
+
+function formValidate(form) {
+    let error = 0;
+    let requiredFields = document.querySelectorAll('.required');
+
+    for (let i = 0; i < requiredFields.length; i++) {
+        const input = requiredFields[i];
+        formRemoveError(input);
+
+        if (input.value === '') {
+            formAddError(input);
+            error++;
+        }
+
+        if (input.classList.contains('email')) {
+            if (emailTest(input)) {
+                formAddError(input);
+                error++;
+            } else {
+                if (input.value === '') {
+                    formAddError(input);
+                    error++;
+                }
+            }
+        }
+    }
+    
+    return error;
+}
+
+function formAddError(input) {
+    input.classList.add('error');
+}
+
+function formRemoveError(input) {
+    input.classList.remove('error');
+}
+
+function emailTest(input) {
+    return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+}
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel php">
+                        <pre>
+                            <code>
+&lt;?php
+ini_set("default_charset", 'utf-8');
+date_default_timezone_set('Europe/Kiev');
+$post = !empty($_POST);
+if ($post) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    $sub = "Form data from website";
+    $error = '';
+
+    if (!$name) {
+        $error .= 'Insert name. ';
+    }
+    if (!$email) {
+        $error .= 'Insert Email. ';
+    }
+
+    if (!$error) {
+        $address = "testing-email@gmail.com";
+        $mes = "Дата: " . date('d.m.y H:i') .
+            "\nName: " . $name .
+            "\nEmail: " . $email .
+            "\nMessage: " . $message;
+        $send = mail($address, $sub, $mes);
+        if ($send) {
+            echo "success";
+        } else {
+            echo $error;
+        }
+    } else {
+        echo $error;
+    }
+}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item-card filterGIT" data-name="GIT COMMANDS">
+                <button class="item-name">
+                    <div class="name-wrapper">
+                        <img src="assets/icons/git.png" alt="git" height="14" class="item-name-icon"> 
+                        <span class="name-span">GIT COMMANDS</span>
+                    </div> 
+                </button>
+                <div class="item-content">
+                    <div class="code-panel git">
+                        <pre>
+                            <code>
+<span class="text-white"><strong>INSTALLATION & GUIS</strong>
+With platform specific installers for Git, GitHub also provides the
+ease of staying up-to-date with the latest releases of the command
+line tool while providing a graphical user interface for day-to-day
+interaction, review, and repository synchronization.
+
+<strong>GitHub for Windows</strong>
+htps://windows.github.com
+
+<strong>GitHub for Mac</strong>
+htps://mac.github.com
+
+For Linux and Solaris platforms, the latest release is available on
+the official Git web site.
+
+<strong>Git for All Platforms</strong>
+htp://git-scm.com</span>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel git">
+                        <pre>
+                            <code>
+<span class="text-white"><strong>SETUP</strong></span>
+<span class="text-white">Configuring user information used across all local repositories</span>
+
+git config --global user.name “[firstname lastname]”
+<span class="text-grey"># set a name that is identifiable for credit when review version history
+----------------------------------------------------------------------</span>
+git config --global user.email “[valid-email]”
+<span class="text-grey"># set an email address that will be associated with each history marker
+----------------------------------------------------------------------</span>
+git config --global color.ui auto
+<span class="text-grey"># set automatic command line coloring for Git for easy reviewing</span>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel git">
+                        <pre>
+                            <code>
+<span class="text-white"><strong>SETUP & INIT</strong>
+Configuring user information, initializing and cloning repositories</span>
+
+git init
+<span class="text-grey"># initialize an existing directory as a Git repository
+----------------------------------------------------------------------</span>
+git clone [url]
+<span class="text-grey"># retrieve an entire repository from a hosted location via URL</span>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel git">
+                        <pre>
+                            <code>
+<span class="text-white"><strong>STAGE & SNAPSHOT</strong>
+Working with snapshots and the Git staging area</span>
+
+git status
+<span class="text-grey"># show modified files in working directory, staged for your next commit
+----------------------------------------------------------------------</span>
+git add [file]
+<span class="text-grey"># add a file as it looks now to your next commit (stage)
+----------------------------------------------------------------------</span>
+git reset [file]
+<span class="text-grey"># unstage a file while retaining the changes in working directory
+----------------------------------------------------------------------</span>
+git diff
+<span class="text-grey"># diff of what is changed but not staged
+----------------------------------------------------------------------</span>
+git diff --staged
+<span class="text-grey"># diff of what is staged but not yet commited
+----------------------------------------------------------------------</span>
+git commit -m “[descriptive message]”
+<span class="text-grey"># commit your staged content as a new commit snapshot</span>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel git">
+                        <pre>
+                            <code>
+<span class="text-white"><strong>BRANCH & MERGE</strong>
+Isolating work in branches, changing context, and integrating changes</span>
+
+git branch
+<span class="text-grey"># list your branches. a * will appear next to the currently active branch
+----------------------------------------------------------------------</span>
+git branch [branch-name]
+<span class="text-grey"># create a new branch at the current commit
+----------------------------------------------------------------------</span>
+git checkout
+<span class="text-grey"># switch to another branch and check it out into your working directory
+----------------------------------------------------------------------</span>
+git merge [branch]
+<span class="text-grey"># merge the specified branch’s history into the current one
+----------------------------------------------------------------------</span>
+git log
+<span class="text-grey"># show all commits in the current branch’s history</span>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel git">
+                        <pre>
+                            <code>
+<span class="text-white"><strong>INSPECT & COMPARE</strong>
+Examining logs, diffs and object information</span>
+
+git log
+<span class="text-grey"># show the commit history for the currently active branch
+----------------------------------------------------------------------</span>
+git log branchB..branchA
+<span class="text-grey"># show the commits on branchA that are not on branchB
+----------------------------------------------------------------------</span>
+git log --follow [file]
+<span class="text-grey"># show the commits that changed file, even across renames
+----------------------------------------------------------------------</span>
+git diff branchB...branchA
+<span class="text-grey"># show the diff of what is in branchA that is not in branchB
+----------------------------------------------------------------------</span>
+git show [SHA]
+<span class="text-grey"># show any object in Git in human-readable format</span>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel git">
+                        <pre>
+                            <code>
+<span class="text-white"><strong>TRACKING PATH CHANGES</strong>
+Versioning file removes and path changes</span>
+
+git rm [file]
+<span class="text-grey"># delete the file from project and stage the removal for commit
+----------------------------------------------------------------------</span>
+git mv [existing-path] [new-path]
+<span class="text-grey"># change an existing file path and stage the move
+----------------------------------------------------------------------</span>
+git log --stat -M
+<span class="text-grey"># show all commit logs with indication of any paths that moved</span>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel git">
+                        <pre>
+                            <code>
+<span class="text-white"><strong>IGNORING PATTERNS</strong>
+Preventing unintentional staging or commiting of files</span>
+
+<span class="text-grey">logs/
+*.notes
+pattern*/
+Save a file with desired paterns as .gitignore with either direct string
+matches or wildcard globs.
+----------------------------------------------------------------------</span>
+git config --global core.excludesfile [file]
+<span class="text-grey"># system wide ignore patern for all local repositories</span>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel git">
+                        <pre>
+                            <code>
+<span class="text-white"><strong>SHARE & UPDATE</strong>
+Retrieving updates from another repository and updating local repos</span>
+
+git remote add [alias] [url]
+<span class="text-grey"># add a git URL as an alias
+----------------------------------------------------------------------</span>
+git fetch [alias]
+<span class="text-grey"># fetch down all the branches from that Git remote
+----------------------------------------------------------------------</span>
+git merge [alias]/[branch]
+<span class="text-grey"># merge a remote branch into your current branch to bring it up to date
+----------------------------------------------------------------------</span>
+git push [alias] [branch]
+<span class="text-grey"># Transmit local branch commits to the remote repository branch
+----------------------------------------------------------------------</span>
+git pull
+<span class="text-grey"># fetch and merge any commits from the tracking remote branch</span>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel git">
+                        <pre>
+                            <code>
+<span class="text-white"><strong>REWRITE HISTORY</strong>
+Rewriting branches, updating commits and clearing history</span>
+
+git rebase [branch]
+<span class="text-grey"># apply any commits of current branch ahead of specified one
+----------------------------------------------------------------------</span>
+git reset --hard [commit]
+<span class="text-grey"># clear staging area, rewrite working tree from specified commit</span>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel git">
+                        <pre>
+                            <code>
+<span class="text-white"><strong>TEMPORARY COMMITS</strong>
+Temporarily store modified, tracked files in order to change branches</span>
+
+git stash
+<span class="text-grey"># Save modified and staged changes
+----------------------------------------------------------------------</span>
+git stash list
+<span class="text-grey"># list stack-order of stashed file changes
+----------------------------------------------------------------------</span>
+git stash pop
+<span class="text-grey"># write working from top of stash stack
+----------------------------------------------------------------------</span>
+git stash drop
+<span class="text-grey"># discard the changes from top of stash stack</span>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="code-panel git">
+                        <pre>
+                            <code>
+$ git clone https://url
+
+$ git status
+
+$ git add . 
+
+$ git commit -m . 
+
+or
+
+$ git commit -m "commit message"
+
+$ git push -u origin main
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
