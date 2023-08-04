@@ -7,4 +7,4 @@ This solution turned out to be quite effective, and my colleagues were also grat
 
 To implement this application, I used HTML, CSS and Javascript. The UI was also developed by myself.
 
-[Here's the demo](https://redhatdev16.github.io/snippets/)
+[Here's the demo](https://luckydevn16.github.io/snippets/)
